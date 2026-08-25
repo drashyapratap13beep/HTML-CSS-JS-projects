@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 20px;
+    font: bold 16px 'Montserrat', sans-serif;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul >li > a:hover{
+    color: gray
+}
+
+main{
+    min-height: 90vh;
+}
+
+.container{
+    background-color: lightblue;
+    max-width: 80vh;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.container h1{
+    padding: 10px;
+}
+
+#submit-btn{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font: bold 16px 'Montserrat', sans-serif; 
+    cursor: pointer;
+}
+
+#resultcont {
+    min-height: 30px;
+}
+
+.result-box {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.result-box.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.result-box.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#resultcont div::first-letter{
+    text-transform: capitalize;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: lightblue;
+    }
+    .container{
+        font-size: 1rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 5px;
+    }
+    
+}
