@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="glass-blur">
+      <div class="form-container">
+        <form id="profile-form">
+          <label for="name-area">Username</label>
+          <input type="text" id="name-area" name="name" placeholder="Enter your name..." value="Alex Stark">
+
+          <label for="profile-url">Profile URL</label>
+          <input type="url" id="profile-url" name="profileUrl" placeholder="Paste profile image URL" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYneImNtLv0PdGzESlB8EcXFvM9ruPoDafbOo7Zi5FtQ&s=10">
+
+          <label for="profession-area">Profession</label>
+          <input type="text" id="profession-area" name="profession" placeholder="Enter your profession" value="Developer">
+
+          <label for="text-area">Tell about yourself</label>
+          <textarea id="text-area" name="bio" placeholder="Write something about yourself...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus animi libero fugiat ipsa quos unde placeat delectus. Fugit praesentium perspiciatis recusandae numquam mollitia libero eos aut, similique illum quisquam!</textarea>
+
+          <button type="submit" id="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <div class="cards-container">
+        <div id="profile-pic">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYneImNtLv0PdGzESlB8EcXFvM9ruPoDafbOo7Zi5FtQ&s=10"
+            alt="profile-img"
+            id="profile-image">
+          <h2 id="card-name">Alex Stark</h2>
+          <h3 id="card-profession">Developer</h3>
+          <p id="card-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus animi libero fugiat ipsa quos unde placeat delectus. Fugit praesentium perspiciatis recusandae numquam mollitia libero eos aut, similique illum quisquam!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
